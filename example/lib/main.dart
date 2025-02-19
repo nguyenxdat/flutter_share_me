@@ -121,9 +121,9 @@ class _MyAppState extends State<MyApp> {
       case Share.messenger:
         response = await flutterShareMe.shareToMessenger(url: url, msg: msg);
         break;
-      case Share.twitter:
-        response = await flutterShareMe.shareToTwitter(url: url, msg: msg);
-        break;
+      // case Share.twitter:
+      //   response = await flutterShareMe.shareToTwitter(url: url, msg: msg);
+      //   break;
       case Share.whatsapp:
         if (file != null) {
           response = await flutterShareMe.shareToWhatsApp(
