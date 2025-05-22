@@ -57,14 +57,14 @@ public class FlutterShareMePlugin implements MethodCallHandler, FlutterPlugin, A
     private static CallbackManager callbackManager;
     private MethodChannel methodChannel;
 
-    /**
-     * Plugin registration.
-     */
-    public static void registerWith(Registrar registrar) {
-        final FlutterShareMePlugin instance = new FlutterShareMePlugin();
-        instance.onAttachedToEngine(registrar.messenger());
-        instance.activity = registrar.activity();
-    }
+//    /**
+//     * Plugin registration.
+//     */
+//    public static void registerWith(Registrar registrar) {
+//        final FlutterShareMePlugin instance = new FlutterShareMePlugin();
+//        instance.onAttachedToEngine(registrar.messenger());
+//        instance.activity = registrar.activity();
+//    }
 
     @Override
     public void onAttachedToEngine(FlutterPluginBinding binding) {
